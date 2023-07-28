@@ -276,7 +276,7 @@
     }
   
     .menu-btn {
-      background: url(./photos/menu.png) no-repeat;
+      background: url(./photos/menu.webp) no-repeat;
       background-size: 30px;
       background-position: center;
       width: 40px;
@@ -287,7 +287,7 @@
   
     .menu-btn.active {
       z-index: 999;
-      background: url(/photos/cerrar.png) no-repeat;
+      background: url(/photos/cerrar.webp) no-repeat;
       background-size: 25px;
       background-position: center;
       transition: 0.3s ease;
