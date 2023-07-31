@@ -13,7 +13,6 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -362,46 +361,101 @@ footer a{
   text-transform: none;
   line-height: 1;
 }
-
-/* Estilos para dispositivos móviles (menos de 768px) */
-@media (max-width: 767px) {
+/* Media query para dispositivos con un ancho máximo de 768px (tablets y dispositivos móviles en orientación horizontal) */
+@media screen and (max-width: 991px) {
   header {
-    padding: 10px 15px; /* Reduzco el padding aún más para dispositivos móviles */
+    margin: 0;
+    padding: 5px 20px 1px 1px; /* Reducir el padding del encabezado para adaptarse a pantallas más pequeñas */
   }
 
   header img {
-    height: 100px; /* Ajusto el tamaño del logo para dispositivos móviles */
+    height: 200px; /* Reducir el tamaño del logo para adaptarse a pantallas más pequeñas */
     width: auto;
+    margin-left: 30px;
+    margin-top: 20px;
   }
 
-  header .navigation .navigation-items {
-    display: none; /* Oculto el menú de navegación en dispositivos móviles */
+  header .brand {
+    font-size: 1.2em; /* Reducir el tamaño del texto del encabezado para adaptarse a pantallas más pequeñas */
   }
 
-  .menu-btn {
-    display: block; /* Muestro el botón del menú en dispositivos móviles */
+  header .navigation {
+    display: none; /* Ocultar la navegación en dispositivos móviles (puedes implementar un menú desplegable o un ícono para mostrar/ocultar la navegación) */
   }
 
-  .home .content {
-    width: 100%; /* Ajusto el ancho del contenido para dispositivos móviles */
+  .home .content h1 {
+    font-size: 2.5em; /* Reducir el tamaño del título para adaptarse a pantallas más pequeñas */
+    margin-left: 0; /* Centrar el título en dispositivos móviles */
   }
 
-  /* Estilos específicos para el menú de navegación en dispositivos móviles */
-  header .navigation.active {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(1, 1, 1, 0.5);
+  .home .content a {
+    margin-left: 0; /* Centrar el botón en dispositivos móviles */
   }
 
-  header .navigation .navigation-items a {
-    color: #222;
+  .home .media-icons {
+    display: none; /* Ocultar los íconos de redes sociales en dispositivos móviles */
+  }
+
+  .form-txt {
+    flex-direction: column; /* Cambiar la dirección del flexbox para que los enlaces se muestren debajo del texto en dispositivos móviles */
+  }
+
+  form {
+    width: 90%; /* Reducir el ancho del formulario para adaptarse a pantallas más pequeñas */
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer h4 {
+    font-size: 16px; /* Reducir el tamaño del texto del footer para adaptarse a pantallas más pequeñas */
+  }
+}
+
+/* Media query para dispositivos con un ancho máximo de 480px (smartphones en orientación vertical) */
+@media screen and (max-width: 480px) {
+  header {
+    padding: 0;
+  }
+  header img {
+    height: 100px; /* Reducir el tamaño del logo para adaptarse a pantallas más pequeñas */
+    width: auto;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+  header .brand {
     font-size: 1.2em;
-    margin: 20px;
   }
+
+  header .navigation {
+    display: none;
+  }
+  .home .content a {
+    margin-left: 0; 
+
+  .home .media-icons {
+    display: none;
+  }
+  .home .content p {
+    font-size: 14px;
+  }
+  .slider-navigation .nav-btn{
+    margin: 0;
+  }
+  .form-txt {
+    flex-direction: column;
+  }
+
+  form{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  form h2{
+    width: 60%;
+    margin-right: 10px;
+  }
+  footer h4 {
+    font-size: 10px; /* Reducir el tamaño del texto del footer para adaptarse a pantallas más pequeñas */
+  }
+}
 }
