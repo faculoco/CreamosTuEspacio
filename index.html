@@ -15,10 +15,11 @@
     <meta name="image" content="./photos/logo2.webp">
     <meta itemprop="telephone" content="011 2245-1567">
     <meta name="theme-color" content="#5f5eaa">
-<meta name="msapplication-TileColor" content="#5f5eaa">
-<meta name="msapplication-navbutton-color" content="#5f5eaa">
-<meta name="apple-mobile-web-app-status-bar-style" content="#5f5eaa">
+    <meta name="msapplication-TileColor" content="#5f5eaa">
+    <meta name="msapplication-navbutton-color" content="#5f5eaa">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#5f5eaa">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-footer.css">
     <link rel="icon" href="./photos/Logo Transparente1.webp" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <script src="https://kit.fontawesome.com/a2c653daa5.js" crossorigin="anonymous"></script>
@@ -41,13 +42,7 @@
             <img src="./photos/Logo Transparente1.webp" alt="Logo de la empresa">
         </div>
         <div class="menu-btn" id="menu-btn"></div>
-        <div class="navigation" id="navigation">
-            <div class="navigation-items">
-                <a href="#" target="_blank" aria-hidden="true">Historia</a>
-                <a href="https://www.creamostuespacio.com/listado/hogar-muebles-jardin/muebles-hogar/escritorios/" target="_blank" aria-hidden="true">Muebles</a>
-                <a href="#" target="_blank" aria-hidden="true">Contacto</a>
-            </div>
-        </div>
+        <div class="navigation" id="navigation"></div>
     </header>
 
     <section class="home" id="home">
@@ -95,38 +90,32 @@
         </div>
 
     </section>
-    <main>
-        <div class="Historia" id="Historia">
-            <h2 class="TitleText">H<span>istoria</span></h2>
+    <section id="about-manifiesto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                    <div class="box-about" data-speed="4">
+                        <h5 data-animated="fadeInUp">QUIENES SOMOS</h5>
+                        <h1 data-animated="fadeInUp">
+                            Somos una empresa de tradición europea, con más de 75 años dedicados a la satisfacción de los hogares más exigentes de la Argentina y el mundo.
+                        </h1>
+                        <p data-animated="fadeInUp">
+                            Nuestros muebles se caracterizan por ser únicos, ya que son mucho más que una pieza de diseño. Representan una diversidad de espacios llenos de sensaciones únicas en perfecta armonía con el lugar y su personalidad. Todos los días, nuestros diseñadores y maestros artesanos buscan otorgar a cada creación el confort y la funcionalidad que sus espacios merecen.
+                        </p>
+                        <p data-animated="fadeInUp">
+                            Además el Fontenla Design Mall, es también único en Sudamérica. Este mega Mall se destaca por ser un centro de logística propio con un salón de ventas de más de 9000 m2, atendido por arquitectos, diseñadores de interior y reconocidos decoradores.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
         </div>
-
-        <form>
-        </form>
-    </main>
-
+    </section>
     <footer>
-        <div class="olas">
-            <div class="olas" id="olas1"></div>
-            <div class="olas" id="olas2"></div>
-            <div class="olas" id="olas3"></div>
-            <div class="olas" id="olas4"></div>
-        </div>
-        <ul class="Social-icons">
-            <li>
-                <a href="#"><i class="fa-brands fa-github" style="color: #fff"></i></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa-brands fa-linkedin" style="color: #fff;"></i></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa-brands fa-instagram" style="color: #fff;"></i></a>
-            </li>
-            <li>
-                <a href="#"><i class="fa-brands fa-whatsapp" style="color: #fff;"></i></a>
-            </li>
-        </ul>
+        <h4><i class="fa-solid fa-code fa-bounce"></i> Desarrollado por <a href="https://www.instagram.com/damianortizdev/">@damianortizdev</a> <i class="fa-solid fa-code fa-bounce"></i></h4>
     </footer>
 
+    
     <script type="text/javascript">
         const menuBtn = document.querySelector(".menu-btn");
         const navigation = document.querySelector(".navigation");
