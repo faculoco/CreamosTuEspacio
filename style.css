@@ -200,6 +200,7 @@ home:before {
   background-color: #ffffff;
   padding: 80px 0;
   position: relative; /* Agregar posición relativa para posicionar la imagen correctamente */
+  background-color: whitesmoke;
 }
 
 #about-manifiesto .container {
@@ -207,24 +208,25 @@ home:before {
   margin: 0 auto;
 }
 
-#about-manifiesto h5 {
-  font-size: 18px;
+#about-manifiesto h2 {
+  font-size: 30px;
   font-weight: bold;
-  color: #333;
+  color: #000;
   margin-bottom: 20px;
+  text-decoration: wavy;
 }
 
 #about-manifiesto h1 {
   font-size: 36px;
   font-weight: bold;
-  color: #333;
+  color: #000;
   line-height: 1.4;
   margin-bottom: 30px;
 }
 
 #about-manifiesto p {
   font-size: 16px;
-  color: #666;
+  color: #000;
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -245,16 +247,83 @@ home:before {
   }
 }
 
+form {
+  padding: 50px 55px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  text-align: center;
+  width: 340px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+form h2{
+  color: #551A8B;
+  font-size: 35px;
+}
+
+label {
+  color: #000;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+input, textarea {
+  padding: 17px 25px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  background-color: #000;
+  border: 2px solid #000;
+  color: #551A8B;
+  outline: none;
+  text-transform: uppercase;
+}
+
+input::placeholder, textarea::placeholder{
+  color: #551A8B;
+  font-size: 10px;
+}
+
+.form-txt {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.form-txt a{
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.bnt {
+  font-size: 16px;
+  color: #551A8B;
+  border: 0;
+  border-radius: 25px;
+  background-color: #551A8B;
+}
 /* Estilos para el footer */
 footer {
-  background-color: #333;
+  background-color: #000;
   padding: 20px 0;
   text-align: center;
 }
 
 footer h4 {
   color: #fff;
-  font-size: 18px;
+  font-size: 20px;
   margin: 0;
 }
 
@@ -263,6 +332,10 @@ footer i {
   vertical-align: middle;
   margin: 0 10px;
   animation: bounce 1.5s infinite;
+}
+
+footer a{
+  text-decoration: none;
 }
 
 @keyframes bounce {
