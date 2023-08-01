@@ -36,15 +36,10 @@ header {
   padding: 15px 200px;
   transition: 0.5s ease;
 }
-
-header .logo {
-  display: flex;
-  align-items: center;
-}
-
 header img {
   height: 150px;
   width: 300px;
+  padding-left: 50px;
 }
 
 header .brand {
@@ -60,9 +55,10 @@ header .navigation {
 }
 /* Sección principal */
 section {
+  margin: 0;
   width: 100%;
   max-width: 100%;
-  padding: 50px 55px;
+  padding: 50px;
   background-color: rgba(0, 0, 0, 0.9);
 }
 
@@ -210,18 +206,23 @@ home:before {
   transform: scale(1.2);
 }
 #about-manifiesto {
-  background-color: #fff;
-  padding: 80px 0;
+
+  background-color: whitesmoke;
+  padding: 60px;
   position: relative;
   border: 1px solid #000;
 }
 #about-manifiesto .container {
+  display: flex;
+  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 #about-manifiesto h2 {
-  font-size: 30px;
+  display: flex;
+  align-items: center;
+  font-size: 80px;
   font-weight: bold;
   color: #000;
   margin-bottom: 20px;
@@ -229,15 +230,18 @@ home:before {
 }
 
 #about-manifiesto h1 {
-  font-size: 36px;
+  display: flex;
+  align-items: center;
+  font-size: 40px;
   font-weight: bold;
   color: #000;
   line-height: 1.4;
   margin-bottom: 30px;
+  margin-top: 20px;
 }
 
 #about-manifiesto p {
-  font-size: 16px;
+  font-size: 25px;
   color: #000;
   line-height: 1.6;
   margin-bottom: 20px;
@@ -258,6 +262,7 @@ home:before {
     transform: translateY(0);
   }
 }
+/*CONTACTO*/
 .contacto{
   text-align: center;
 }
@@ -330,26 +335,32 @@ home:before {
 
 }
 .contacto .row form input button{
-  color: #fff;
+  color: whitesmoke;
+}
+.contacto .row form input{
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 600;
 }
 
-/* Estilos para el footer */
+/*FOOTER*/
 footer {
-  background-color: whitesmoke;
-  padding: 50px 56px;
+  background: rgb(47,13,246);
+  background: linear-gradient(90deg, rgba(47,13,246,1) 10%, rgba(81,29,253,1) 40%, rgba(85,0,213,1) 100%);
+  padding: 40px 56px;
   text-align: center;
   width: 100%;
 }
 
 footer h4 {
   color: #000;
-  font-size: 20px;
+  font-size: 30px;
   margin: 0;
 }
 
 footer i {
   color: #000;
-  font-size: 20px;
+  font-size: 40px;
   vertical-align: middle;
   margin: 0 10px;
   animation: bounce 1.5s infinite;
@@ -357,6 +368,7 @@ footer i {
 
 footer a{
   text-decoration: none;
+  color: whitesmoke;
 }
 
 @keyframes bounce {
