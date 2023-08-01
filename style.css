@@ -136,6 +136,10 @@ home:before {
   flex-direction: column;
   transition: 0.5 ease;
 }
+.home .media-icons img{
+  height: 24px;
+  width: 25px;
+}
 
 .home .media-icons a {
   color: #fff;
