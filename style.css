@@ -1,13 +1,15 @@
 /* Importación de la fuente */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;400;600;800&display=swap');
-/* Estilos generales para todos los tamaños de pantalla */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Noto Sans', sans-serif; /* Establecer una altura mínima igual a la altura de la ventana del navegador */
   overflow-x: hidden;
+  background-color: #fff;
 }
-/* Encabezado */
+html{
+  width: 100%;
+}
 header {
   z-index: 999;
   position: absolute;
@@ -45,8 +47,7 @@ header .navigation {
 section {
   width: 100%;
   max-width: 100%;
-  padding: 0;
-  box-sizing: border-box;
+  padding: 50px 55px;
   background-color: rgba(0, 0, 0, 0.9);
 }
 
@@ -193,15 +194,11 @@ home:before {
 .slider-navigation .nav-btn:hover {
   transform: scale(1.2);
 }
-
-/* Estilos para la sección "about-manifiesto" */
 #about-manifiesto {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 80px 0;
-  position: relative; /* Agregar posición relativa para posicionar la imagen correctamente */
-  background-color: whitesmoke;
+  position: relative;
 }
-
 #about-manifiesto .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -246,15 +243,17 @@ home:before {
   }
 }
 
+
 form {
   padding: 50px 55px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
   border-radius: 20px;
   text-align: center;
-  width: 340px;
+  width: 90%;
   background-color: #fff;
   margin-left: auto;
   margin-right: auto;
+  border: 1px solid #000;
 }
 
 .input-group {
@@ -264,7 +263,7 @@ form {
 }
 
 form h2{
-  color: #551A8B;
+  color: #000;
   font-size: 35px;
 }
 
@@ -280,16 +279,16 @@ input, textarea {
   padding: 17px 25px;
   border-radius: 25px;
   margin-bottom: 20px;
-  background-color: #000;
+  background-color: #fff;
   border: 2px solid #000;
-  color: #551A8B;
+  color: #000;
   outline: none;
   text-transform: uppercase;
 }
 
 input::placeholder, textarea::placeholder{
-  color: #551A8B;
-  font-size: 10px;
+  color: #000;
+  font-size: 12px;
 }
 
 .form-txt {
@@ -308,16 +307,17 @@ input::placeholder, textarea::placeholder{
 
 .bnt {
   font-size: 16px;
-  color: #551A8B;
+  color: #000;
   border: 0;
   border-radius: 25px;
-  background-color: #551A8B;
+  background-color: #000;
 }
 /* Estilos para el footer */
 footer {
   background-color: #000;
   padding: 20px 0;
   text-align: center;
+  width: 100%;
 }
 
 footer h4 {
@@ -382,7 +382,6 @@ footer a{
   header .navigation {
     display: none; /* Ocultar la navegación en dispositivos móviles (puedes implementar un menú desplegable o un ícono para mostrar/ocultar la navegación) */
   }
-
   .home .content h1 {
     font-size: 2.5em; /* Reducir el tamaño del título para adaptarse a pantallas más pequeñas */
     margin-left: 0; /* Centrar el título en dispositivos móviles */
@@ -431,9 +430,6 @@ footer a{
   }
   .home .content a {
     margin-left: 0; 
-
-  .home .media-icons {
-    display: none;
   }
   .home .content p {
     font-size: 14px;
@@ -444,18 +440,20 @@ footer a{
   .form-txt {
     flex-direction: column;
   }
-
+  #about-manifiesto {
+    width: auto;
+  }
   form{
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+    width: auto;
   }
   form h2{
     width: 60%;
     margin-right: 10px;
   }
+  footer{
+    height: auto;
+  }
   footer h4 {
     font-size: 10px; /* Reducir el tamaño del texto del footer para adaptarse a pantallas más pequeñas */
   }
-}
 }
