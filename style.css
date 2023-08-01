@@ -368,7 +368,7 @@ footer h4 {
 
 footer i {
   color: #000;
-  font-size: 40px;
+  font-size: 20px;
   vertical-align: middle;
   margin: 0 10px;
   animation: bounce 1.5s infinite;
@@ -489,6 +489,13 @@ footer a{
   }
   form {
     padding: 20px;
+  }
+  footer h4{
+    font-size: small;
+  }
+  footer i{
+    height: 10px;
+    width: 10px;
   }
   .input-group {
     grid-template-columns: 1fr;
