@@ -456,8 +456,6 @@ footer a{
   }
 }
 @media screen and (max-width: 480px) {
-  .home video{
-  }
   header {
     text-align: center;
     margin: 0;
