@@ -1,14 +1,29 @@
 /* Importación de la fuente */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;400;600;800&display=swap');
+
+:root{
+  --main-color:#d3ad7f;
+  --black:#000;
+  --bg:#010103;
+  --border:.1rem solid rgba(255,255,255,.3);
+}
+html{
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
 body {
   margin: 0;
   padding: 0;
   font-family: 'Noto Sans', sans-serif; /* Establecer una altura mínima igual a la altura de la ventana del navegador */
-  overflow-x: hidden;
-  background-color: #fff;
-}
-html{
-  width: 100%;
+  background: var(--bg);
 }
 header {
   z-index: 999;
@@ -198,6 +213,7 @@ home:before {
   background-color: #fff;
   padding: 80px 0;
   position: relative;
+  border: 1px solid #000;
 }
 #about-manifiesto .container {
   max-width: 1200px;
@@ -242,91 +258,97 @@ home:before {
     transform: translateY(0);
   }
 }
-
-
-form {
-  padding: 50px 55px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-  border-radius: 20px;
-  text-align: center;
-  width: 90%;
-  background-color: #fff;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid #000;
-}
-
-.input-group {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-
-form h2{
-  color: #000;
-  font-size: 35px;
-}
-
-label {
-  color: #000;
-  font-size: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-}
-
-input, textarea {
-  padding: 17px 25px;
-  border-radius: 25px;
-  margin-bottom: 20px;
-  background-color: #fff;
-  border: 2px solid #000;
-  color: #000;
-  outline: none;
-  text-transform: uppercase;
-}
-
-input::placeholder, textarea::placeholder{
-  color: #000;
-  font-size: 12px;
-}
-
-.form-txt {
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: space-between;
+.contacto{
   text-align: center;
 }
-
-.form-txt a{
-  color: #000;
-  font-size: 14px;
-  font-weight: 600;
-  text-decoration: none;
+.contacto h1{
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+}
+.contacto .row {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  background: var(--black);
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
-.bnt {
-  font-size: 16px;
-  color: #000;
-  border: 0;
-  border-radius: 25px;
-  background-color: #000;
+.contacto .row .mapa {
+  flex: 1 1 45rem;
+  width: 100%;
+  height: 400px; /* Ajusta la altura adecuadamente */
+  object-fit: cover;
 }
+
+.contacto .row form {
+  flex: 1 1 45rem;
+}
+
+.contacto .row h3 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  color: #fff;
+}
+
+.contacto .row form .inputBox {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: var(--bg);
+  border: var(--border);
+}
+
+.contacto .row form .inputBox span {
+  color: #fff;
+  font-size: 2rem;
+  padding-left: 2rem;
+}
+
+.contacto .row form .inputBox input {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.7rem;
+  color: #fff;
+  text-transform: none;
+  background: none;
+  border: none;
+}
+
+.contacto .row form .inputBox input::placeholder{
+  color: #fff;
+}
+
+.contacto .row form input.btn{
+  padding: 30px 75px;
+  background: #fff;
+
+}
+.contacto .row form input button{
+  color: #fff;
+}
+
 /* Estilos para el footer */
 footer {
-  background-color: #000;
-  padding: 20px 0;
+  background-color: whitesmoke;
+  padding: 50px 56px;
   text-align: center;
   width: 100%;
 }
 
 footer h4 {
-  color: #fff;
+  color: #000;
   font-size: 20px;
   margin: 0;
 }
 
 footer i {
+  color: #000;
   font-size: 20px;
   vertical-align: middle;
   margin: 0 10px;
@@ -383,40 +405,42 @@ footer a{
     display: none; /* Ocultar la navegación en dispositivos móviles (puedes implementar un menú desplegable o un ícono para mostrar/ocultar la navegación) */
   }
   .home .content h1 {
-    font-size: 2.5em; /* Reducir el tamaño del título para adaptarse a pantallas más pequeñas */
-    margin-left: 0; /* Centrar el título en dispositivos móviles */
+    font-size: 2.5em;
+    margin-left: 0;
   }
 
   .home .content a {
-    margin-left: 0; /* Centrar el botón en dispositivos móviles */
+    margin-left: 0;
   }
 
   .home .media-icons {
-    display: none; /* Ocultar los íconos de redes sociales en dispositivos móviles */
+    height: 20px;
+    width: 20px;
+  }
+  .contacto .row {
+    padding: 1rem;
   }
 
+  .contacto .row h3 {
+    font-size: 2.5rem;
+  }
+  .contacto .row .mapa,
+  .contacto .row form {
+    flex: 1 1 100%;
+  }
   .form-txt {
-    flex-direction: column; /* Cambiar la dirección del flexbox para que los enlaces se muestren debajo del texto en dispositivos móviles */
+    flex-direction: column;
   }
-
-  form {
-    width: 90%; /* Reducir el ancho del formulario para adaptarse a pantallas más pequeñas */
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   footer h4 {
-    font-size: 16px; /* Reducir el tamaño del texto del footer para adaptarse a pantallas más pequeñas */
+    font-size: 16px; 
   }
 }
-
-/* Media query para dispositivos con un ancho máximo de 480px (smartphones en orientación vertical) */
 @media screen and (max-width: 480px) {
   header {
     padding: 0;
   }
   header img {
-    height: 100px; /* Reducir el tamaño del logo para adaptarse a pantallas más pequeñas */
+    height: 100px;
     width: auto;
     margin-left: 30px;
     margin-top: 20px;
@@ -424,7 +448,6 @@ footer a{
   header .brand {
     font-size: 1.2em;
   }
-
   header .navigation {
     display: none;
   }
@@ -440,20 +463,16 @@ footer a{
   .form-txt {
     flex-direction: column;
   }
-  #about-manifiesto {
-    width: auto;
+  section#about-manifiesto {
+    padding: 50px 55px;
   }
-  form{
-    width: auto;
+  form {
+    padding: 20px;
   }
-  form h2{
-    width: 60%;
-    margin-right: 10px;
+  .input-group {
+    grid-template-columns: 1fr;
   }
-  footer{
-    height: auto;
-  }
-  footer h4 {
-    font-size: 10px; /* Reducir el tamaño del texto del footer para adaptarse a pantallas más pequeñas */
+  .contacto .row h3 {
+    font-size: 2rem;
   }
 }
